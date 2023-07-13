@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engine Noise Classification</title>
+
+<style>
+        #input-type{ 
+            margin-bottom: 5px;
+
+        }
+</style>
+
+</head>
+<body>
+    <h1>Engine Noise Classification</h1>
+    <form action="{{ url_for('predict') }}" method="post">
+        
+        <input type="text" name="one" placeholder="fname" id="input-type" required><br>
+        
+        <input type="text" name="two" id="input-type" required><br>
+        
+        <input type="text" name="three" id="input-type" required><br>
+        
+        <input type="text" name="four" id="input-type" required><br>
+        
+        <input type="text" name="five" id="input-type" required><br>
+        
+        <input type="text" name="six" id="input-type" required><br>
+        
+        <input type="text" name="seven" id="input-type" required><br>
+        
+        <input type="text" name="eight" id="input-type" required><br>
+        
+        <input type="text" name="nine" id="input-type" required><br>
+        
+        <input type="text" name="ten" id="input-type" required><br>
+        
+        <input type="text" name="eleven" id="input-type" required><br>
+        
+        <input type="text" name="twelve" id="input-type" required><br>
+        
+        <input type="text" name="thirteen" id="input-type" required><br>
+        
+        <input type="text" name="fourteen" id="input-type" required><br>
+        
+        <input type="text" name="fifteen" id="input-type" required><br>
+
+        <input type="submit">
+    </form>
+    <h3><b>Prediction:</b>  {{result}}</h3>
+</body>
+</html>
